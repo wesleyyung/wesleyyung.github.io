@@ -18,7 +18,6 @@ body {
 .navbar {
   background-color: black;
   opacity: 0.5;
-  height: 55px;
 }
 
 .navbar a {
@@ -42,6 +41,14 @@ body {
   text-decoration: line-through;
   text-decoration-color: black;
   text-decoration-style: wavy;
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar .nav-link {
+  float: right;
 }
 
 /*
@@ -176,14 +183,24 @@ footer {
   width: auto;
   height: 800px;
   background-attachment: fixed;
+  padding-top: 400px;
+  padding-bottom: 300px;
 }
 
-footer {
+.icons {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: row;
 }
+
+.copyright {
+  text-align: center;
+  padding-top: 200px;
+  font-weight: 600;
+}
+
 
 footer img {
   height: 110px;
